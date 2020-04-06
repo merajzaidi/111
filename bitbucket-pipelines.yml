@@ -1,0 +1,9 @@
+image: node:10.16
+clone:
+  depth: full
+pipelines:
+  branches:
+    master:
+      - step:
+          script:
+            - git push https://heroku:45560ea7-0331-4c09-809a-4092b9c86323@git.heroku.com/angrybaaz-backend-v1.git HEAD
